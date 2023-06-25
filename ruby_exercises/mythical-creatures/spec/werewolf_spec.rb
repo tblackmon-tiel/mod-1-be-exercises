@@ -75,6 +75,10 @@ RSpec.describe Werewolf do
     werewolf = Werewolf.new('David', 'London')
     victim = Victim.new
 
+    # this test is broken by the next test,
+    # the fix is either updating the test or
+    # changing the consume method to transform
+    # the human into a werewolf
     werewolf.change!
 
     expect(werewolf.consume(victim)).to eq("A victim was consumed!")
