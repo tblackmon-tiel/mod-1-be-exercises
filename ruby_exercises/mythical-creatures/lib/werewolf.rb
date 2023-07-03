@@ -18,6 +18,8 @@ class Werewolf
     end
 
     def change!
+        # this is probably cleaner
+        # @human = !@human
         if @human == true
             @human = false
             @hungry = true
